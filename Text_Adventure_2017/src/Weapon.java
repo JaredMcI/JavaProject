@@ -15,11 +15,18 @@ public class Weapon{
 
 
     public String toString() {
-        return String.format("%-20s\n%-.1f\n%-20s\n%-12s\n%-20s\n%.1f",
+        return String.format("%-20s%-.1f\n%-20s%-12s\n%-20s%.1f",
                 "Damage: " + getDamage() + "Damage Type: " +
                         getDamage_Type() + "Weight: " + getWeight());
     }
     public Weapon(){
-
+        setDamage(0);
+        setDamage_Type("Unknown");
+        setWeight(0);
+    }
+    public Weapon(double Damage, String Damage_Type, double weight){
+        setDamage(Damage);
+        setDamage_Type(Damage_Type);
+        setWeight(weight);
     }
 }
