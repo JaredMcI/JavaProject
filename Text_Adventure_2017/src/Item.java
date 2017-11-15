@@ -18,8 +18,8 @@ public class Item {
     public double getWeight() { return weight; }
 
     public String toString() {
-        return String.format("%-15s%\n%-15s%\n%-15s%\n%-15s%\n","Item Type: " + getType() + "Item Name: " +
-                getName() + "Item Boost Value: " + getValue() + "Weight: " + getWeight());
+        return String.format("%-15s%\n%-15s%\n%-15s%\n%-15s%\n","Item Type: " , getType() , "Item Name: " ,
+                getName() , "Item Boost Value: " , getValue() , "Weight: " , getWeight());
 
     }
     public Item(){
